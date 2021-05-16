@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/altaContainer">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutUno"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4">
+        <TextView
+            android:id="@+id/textViewGeneral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="General"
+            android:textSize="18dp"
+            android:textColor="#E75927"
+            android:layout_margin="20dp">
+
+        </TextView>
+        <EditText
+            android:id="@+id/editTextNombre"
+            android:layout_width="47mm"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:inputType="text"
+            android:layout_toRightOf="@id/textViewGeneral"
+            android:gravity="center">
+
+        </EditText>
+        <EditText
+            android:id="@+id/editTextRaza"
+            android:layout_width="47mm"
+            android:layout_height="wrap_content"
+            android:hint="Raza"
+            android:inputType="text"
+            android:layout_below="@id/editTextNombre"
+            android:gravity="center"
+            android:layout_toRightOf="@id/textViewGeneral">
+
+        </EditText>
+        <TextView
+            android:id="@+id/textViewGenero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Género"
+            android:textColor="#E75927"
+            android:textSize="18dp"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/editTextRaza"
+            android:layout_alignParentLeft="true">
+
+        </TextView>
+        <Spinner
+            android:id="@+id/spinnerGenero"
+            android:layout_width="47mm"
+            android:layout_height="wrap_content"
+            android:entries="@array/generos"
+            android:layout_below="@id/editTextRaza"
+            android:layout_toRightOf="@id/textViewGenero"
+            android:layout_margin="20dp"/>
+        <TextView
+            android:id="@+id/textViewConstitucion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Constitucion"
+            android:textColor="#E75927"
+            android:textSize="18dp"
+            android:layout_below="@+id/textViewGenero"
+            android:layout_margin="20dp">
+        </TextView>
+        <EditText
+            android:id="@+id/editTextPeso"
+            android:layout_width="33mm"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_below="@+id/textViewGenero"
+            android:layout_toRightOf="@id/textViewConstitucion"
+            android:gravity="center">
+
+        </EditText>
+        <TextView
+            android:id="@+id/textViewKg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kg"
+            android:layout_below="@+id/textViewGenero"
+            android:layout_toRightOf="@id/editTextPeso"
+            android:layout_margin="20dp">
+
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutDos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6">
+
+
+        <Button
+            android:id="@+id/buttonCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CREAR"
+            android:background="@android:color/holo_red_light"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

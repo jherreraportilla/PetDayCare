@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PetDayCare</string>
+
+    <string-array name="generos">
+        <item>Macho</item>
+        <item>Hembra</item>
+    </string-array>
+</resources>
